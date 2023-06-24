@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% block title %}{% trans 'App Name' %}{% endblock title %}
+{% block header %}{% trans 'Welcome' %}{% endblock header %}
+{% block content %}
+
+<div class="card" >
+	<div class="card-body" style="margin: 20px; padding: 20px;">
+		<h1>{% trans 'Welcome' %} {{ new_user.first_name }}!</h1>
+		<p>{% trans 'Your account has been successfully created.' %}<a href="{% url "login" %}">{% trans 'Log in' %}</a>.</p>
+	</div>
+</div>
+
+{% endblock content%}

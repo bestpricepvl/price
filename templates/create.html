@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Создание{% endblock title %}
+{% block header %}Создание{% endblock header %}
+{% block content %}
+<form method="POST" enctype="multipart/form-data">
+	{% csrf_token %}
+    <table>
+        {{ form }}
+    </table>
+	<button type="submit" class="btn btn-outline-success" style="width:100px">Сохранить</button>
+    <button  onclick="history.back();" class="btn btn-outline-info" style="width:100px">Назад</button>	
+</form>
+{% endblock content %}

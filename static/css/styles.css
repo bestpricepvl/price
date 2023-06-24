@@ -1,0 +1,360 @@
+/* Переменные */
+:root {	
+	/* Основные цвета */
+	--navbar-background-color: LightCyan;
+	--main-background-color-light: AliceBlue;
+	--main-background-color-dark: LightCyan;
+	--main-text-color: Blue;
+	--main-header-color: MidnightBlue;
+	--main-text-attention-color: DarkRed;
+	--footer-background-color-light: Blue;
+	--footer-background-color-dark: MidnightBlue;
+	--footer-text-color: White;
+	--card-background-color-light: AliceBlue;
+	--card-background-color-dark: LightCyan;
+	--table-background-color-light: AliceBlue; 
+	--table-background-color-dark: LightCyan; 
+	--table-text-color: RoyalBlue;
+	/* Звездочки в оценке */
+	--star-size: 30px;
+	--star-color: LemonChiffon;
+	--star-background: Gold ;
+}
+
+/*  Навигационное меню */
+.navbar {
+	background-color: var(--main-background-color-dark);		
+	color: var(--main-header-color);
+}
+.navbar .navbar-nav,
+.navbar .navbar-nav .navbar-text {
+	color: var(--main-header-color);
+}
+.navbar ul {
+	background-color: var(--main-background-color-dark);
+	color: var(--main-header-color);
+}
+.navbar li {
+	background-color: var(--main-background-color-dark);
+	color: var(--main-header-color);
+}
+.navbar a {
+	background-color: var(--main-background-color-dark);
+	color: var(--main-header-color);
+}
+/* Цвет пунктов навигационного меню */
+.navbar-default .navbar-collapse  {
+	background-color: var(--main-background-color-dark);
+    color: var(--main-header-color);
+}
+.navbar-nav ul > li > a {
+	background-color: var(--main-background-color-dark);
+    color: var(--main-header-color);
+}
+.dropdown-divider{
+	background-color: var(--main-header-color);
+}
+/* Основная часть */
+body {
+	background-color: var(--main-background-color-light);  	
+}
+h1, h2, h3, h4, h5, h6 {	
+	color: var(--main-header-color);	
+}
+p, ul, li, label {	
+	color: var(--main-text-color);	
+}
+.control-label, .control-group{	
+	color: var(--main-text-color);
+}
+
+/*  Карточки */
+.card {	
+	background-color: var(--card-background-color-light);
+	margin-top: 5px;
+	padding: 10px;
+}
+.card-header {	
+	background-image: linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+	background-image: -o-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+    background-image: -moz-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+    background-image: -webkit-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));	
+	padding: 10px;	
+}
+.card-body {	
+	background-color: var(--card-background-color-light);
+	padding: 10px;	
+}
+.card-footer {	
+	background-image: linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+	background-image: -o-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+    background-image: -moz-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+    background-image: -webkit-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));	
+	padding: 10px;	
+}
+/*  Карточки в новостях */
+.row-news .card {	
+	background-color: var(--card-background-color-light);
+	margin-top: 25px;
+	padding: 10px;
+}
+.row-news .card-header {	
+	background-image: linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+	background-image: -o-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+    background-image: -moz-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+    background-image: -webkit-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));	
+	padding: 10px;	
+}
+.row-news .card-body, .row-news .card-footer {	
+	background-image: linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+	background-image: -o-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+    background-image: -moz-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+    background-image: -webkit-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));	
+	padding: 10px;	
+}
+/*  Карточки в каталоге */
+.row-catalog .card {	
+	background-color: var(--card-background-color-light);
+	margin-top: 25px;
+	padding: 10px;
+}
+.row-catalog .card-header {	
+	background-image: linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+	background-image: -o-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+    background-image: -moz-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+    background-image: -webkit-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));	
+	padding: 10px;	
+}
+.row-catalog .card-body, .row-catalog .card-footer {	
+	background-image: linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+	background-image: -o-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+    background-image: -moz-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));
+    background-image: -webkit-linear-gradient(top, var(--card-background-color-dark), var(--card-background-color-light));	
+	padding: 10px;	
+}
+/* Изображение в центре*/
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  width: 100%;
+  max-width:200px;
+}
+/* Звездочки в оценке*/
+.Stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: var(--star-size);
+  font-family: Times;
+  line-height: 1;
+  text-align: center;
+}
+.Stars::before {
+  content: "★★★★★";
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*  Таблицы */
+table {	
+	background-color: var(--main-background-color-light);	
+	color: var(--main-text-color);
+}
+table.dataTable thead {
+	background-image: linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+	background-image: -o-linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+    background-image: -moz-linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+    background-image: -webkit-linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+	color: var(--main-text-color);
+}
+table.dataTable tbody {
+	background-color: var(--main-background-color-light);		
+}
+table.dataTable td {
+	background-color: var(--main-background-color-light);		
+	color: var(--main-text-color);
+}
+/* header */ 
+header {
+	background-color: Aquamarine;
+	margin-top: 10px;
+	padding: 10px;
+}
+header h1, header h2, header h3, header h4, header h5, header h6 {
+	color: var(--main-header-color);
+	text-align: center; 
+}
+header p {
+    color: DarkBlue;
+	text-align: center; 
+}
+/* main */ 
+main {
+	padding: 10px;
+}
+/* Секция */ 
+#major {
+	background-image: linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+	background-image: -o-linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+    background-image: -moz-linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+    background-image: -webkit-linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));	
+	margin-top: 10px;
+	padding: 10px;
+}
+#major h1, #major h2, #major h3, #major h4, #major h5, #major h6{
+    color:  var(--main-text-color);
+	text-align: center; 
+}
+#major p {
+    color:  var(--main-text-color);
+	text-align: justify; 
+}
+/* Секция */ 
+#benefits {
+	background-image: linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+	background-image: -o-linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+    background-image: -moz-linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+    background-image: -webkit-linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));	
+	margin-top: 10px;
+	padding: 10px;
+}
+/* #benefits .col-md-3 {
+	border: 2px solid MidnightBlue;
+	border-radius: 10px;
+	padding: 10px;	
+} */
+#benefits h1, #benefits h2, #benefits h3, #benefits h4, #benefits h5, #benefits h6 {
+    color:  var(--main-text-color);
+	text-align: center; 
+}
+#benefits p {
+    color:  var(--main-text-color);
+	text-align: justify; 
+}
+#benefits img {
+  height: 300px; 
+  max-width: 300px;
+  margin: auto;
+  display: block;
+  padding: 5px;
+}
+#benefits .fa {
+    padding: 20px;
+    font-size: 60px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+/* Секция */ 
+#catalog {
+	background-image: linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+	background-image: -o-linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+    background-image: -moz-linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+    background-image: -webkit-linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));	
+	margin-top: 10px;
+	padding: 10px;
+}
+#catalog .col-md-3 {
+	border: 2px solid  var(--main-text-color);
+	border-radius: 10px;
+	padding: 10px;	
+}
+#catalog h1, #catalog h2, #catalog h3, #catalog h4, #catalog h5, #catalog h6 {
+    color:  var(--main-text-color);
+	text-align: center; 
+}
+#catalog p {
+    color:  var(--main-text-color);
+	text-align: justify; 
+}
+#catalog img {
+  height: 300px; 
+  max-width: 300px;
+  margin: auto;
+  display: block;
+  padding: 5px;
+}
+/* Секция */ 
+#reviews {
+    background-image: linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+	background-image: -o-linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+    background-image: -moz-linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));
+    background-image: -webkit-linear-gradient(top, var(--main-background-color-dark), var(--main-background-color-light));	
+	margin-top: 10px;
+	padding: 10px;
+}
+#reviews .col-md-3 {
+	border: 2px solid  var(--main-text-color);
+	border-radius: 10px;
+	padding: 10px;	
+}
+#reviews h1, #reviews h2, #reviews h3, #reviews h4, #reviews h5, #reviews h6 {
+    color:  var(--main-text-color);
+	text-align: center; 
+}
+#reviews p {
+    color:  var(--main-text-color);
+	text-align: justify; 
+}
+/* Flex */
+/* footer */
+footer{
+	background-image: linear-gradient(top, var(--footer-background-color-dark), var(--footer-background-color-light));
+	background-image: -o-linear-gradient(top, var(--footer-background-color-dark), var(--footer-background-color-light));
+    background-image: -moz-linear-gradient(top, var(--footer-background-color-dark), var(--footer-background-color-light));
+    background-image: -webkit-linear-gradient(top, var(--footer-background-color-dark), var(--footer-background-color-light));
+    margin-top: 10px;
+	padding: 10px;
+}
+.footer-area h1, .footer-areah2, .footer-area h3, .footer-area h4, .footer-area h5, .footer-area h6 {
+    color: var(--footer-text-color);
+	text-align: center; 
+}
+.footer-area p, .footer-area ul, .footer-area li, .footer-area a {
+    color: var(--footer-text-color);	
+}
+.footer-area img {
+  height: 200px; 
+  max-width: 200px;
+  margin: auto;
+  display: block;
+  padding: 5px;
+}
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+	color: var(--footer-text-color);
+}
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+/* Set a specific color for each brand */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+  background: #f09433;
+  color: white;
+}
+.fa-vk {
+  background: #45bbff;
+  color: white;
+}
+.fa-telegram {
+  background: #45bbff;
+  color: white;
+}

@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}Лучшие цены{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+<h2>Список продуктов (товаров)</h2>
+{% if prices.count > 0 %}
+<div class="row">
+	<table id="myTable" class="cell-border hover stripe" style="width:100%">
+		<thead>
+			<tr>
+				<!--<th>Id</th>-->
+				<th>Дата</th>
+				<th>Место покупки</th>
+				<th>Продукт (товар)</th>
+				<th>Цена</th>
+				<th>Подробности</th>
+				{% if user.is_authenticated %}
+				<th><a href="{{ HTTP_HOST }}/create">Создать</a></th>
+				{% endif %}
+			</tr>
+		</thead>
+		<tbody>
+			{% for goods in prices %}
+			<tr>
+				<!--<td>{{ goods.id }}</td>-->
+				<td>{{ goods.datep | date:"d.m.Y"}}</td>
+				<td>{{ goods.store }}</td>
+				<td>{{ goods.product }}</td>
+				<td>{{ goods.cost }}</td>
+				<td>{{ goods.details }}</td>
+				{% if user.is_authenticated %}
+				<td>
+					<a href="{{ HTTP_HOST }}/edit/{{goods.id}}">Изменить</a> |
+					<a onclick="return confirm('Удалить запись?')" href="{{ HTTP_HOST }}/delete/{{goods.id}}">Удалить</a>
+				</td>			
+				{% endif %}				
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+<div class="row">
+	<a href="{% url 'export_prices_csv' %}">Экспорт в csv</a>
+</div>
+<div class="row">
+	<a href="{% url 'export_prices_excel' %}">Экспорт в Excel</a>
+</div>	
+{% else %}
+<a href="{{ HTTP_HOST }}/create">Создать</a>
+{% endif %}
+{% endblock content %}
+

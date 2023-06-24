@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% block title %}{% trans 'App Name' %}{% endblock title %}
+{% block header %}{% trans 'Authorization' %}{% endblock header %}
+{% block content %}
+{% if form.errors %}
+  <p>{% trans "Incorrect login or password" %}</p>
+{% endif %}
+
+{% if next %}
+  {% if user.is_authenticated %}
+    <p>{% trans "You dont have access" %}</p>
+  {% else %}
+    <p>{% trans 'Login to see this page' %}</p>
+  {% endif %}
+{% endif %}
+
+<div class="card" >
+	<div class="card-body" style="margin: 20px; padding: 20px;">
+		<h4 class="card-title">{% trans 'Authorization' %}</h4>
+		<form method="post">
+			{% csrf_token %}
+			{{ form|crispy }}
+			<button type="submit" class="btn btn-primary btn-block">{% trans 'Login' %}</button>
+		</form>
+	</div>
+</div>
+
+{# Assumes you setup the password_reset view in your URLconf #}
+<p><a href="{% url 'password_reset' %}">{% trans 'Lost password?' %}</a></p>
+
+<p><a href="{% url 'register' %}">{% trans 'Create an account' %}</a></p>
+
+{% endblock content%}

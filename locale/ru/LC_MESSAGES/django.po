@@ -1,0 +1,251 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-31 12:10+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%"
+"100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\bestprice\forms.py:22
+#, fuzzy
+#| msgid "Password reset completed"
+msgid "Password"
+msgstr "Сброс пароля завершен"
+
+#: .\bestprice\forms.py:23
+#, fuzzy
+#| msgid "Lost password?"
+msgid "Repeat password"
+msgstr "Забыли пароль?"
+
+#: .\bestprice\forms.py:35
+#, fuzzy
+#| msgid "Password reset completed"
+msgid "Passwords don't match."
+msgstr "Сброс пароля завершен"
+
+#: .\templates\about.html:3 .\templates\about.html:4
+msgid "About"
+msgstr "О программе..."
+
+#: .\templates\about.html:6
+msgid "The_site_is_designed_to_track_prices"
+msgstr "Сайт предназначен для отслеживания цен"
+
+#: .\templates\registration\logged_out.html:4
+#: .\templates\registration\login.html:4
+#: .\templates\registration\password_change_done.html:3
+#: .\templates\registration\password_change_form.html:3
+#: .\templates\registration\password_reset_complete.html:4
+#: .\templates\registration\password_reset_confirm.html:4
+#: .\templates\registration\password_reset_done.html:4
+#: .\templates\registration\password_reset_form.html:4
+#: .\templates\registration\register.html:4
+#: .\templates\registration\register_done.html:4
+msgid "App Name"
+msgstr "Best Price"
+
+#: .\templates\registration\logged_out.html:5
+msgid "Exit"
+msgstr "Выход"
+
+#: .\templates\registration\logged_out.html:7
+msgid "Logged out!"
+msgstr "Выход выполнен"
+
+#: .\templates\registration\logged_out.html:8
+#, fuzzy
+#| msgid "log in again?"
+msgid "Login again"
+msgstr "Войти снова?"
+
+#: .\templates\registration\login.html:5
+#: .\templates\registration\login.html:21
+msgid "Authorization"
+msgstr "Авторизация"
+
+#: .\templates\registration\login.html:8
+msgid "Incorrect login or password"
+msgstr "Неверный логин или пароль"
+
+#: .\templates\registration\login.html:13
+#, fuzzy
+#| msgid "Your account doesn't have access to this page"
+msgid "You dont have access"
+msgstr ""
+"У вашей учетной записи нет доступа к этой странице. Пожалуйста, войдите в "
+"систему с учетной записью, у которой есть доступ."
+
+#: .\templates\registration\login.html:15
+#, fuzzy
+#| msgid "Please login to see this page."
+msgid "Login to see this page"
+msgstr "Пожалуйста, войдите, чтобы увидеть эту страницу."
+
+#: .\templates\registration\login.html:25
+msgid "Login"
+msgstr "Вход"
+
+#: .\templates\registration\login.html:31
+msgid "Lost password?"
+msgstr "Забыли пароль?"
+
+#: .\templates\registration\login.html:33
+#: .\templates\registration\register.html:5
+#: .\templates\registration\register.html:10
+msgid "Create an account"
+msgstr "Зарегистрироваться"
+
+#: .\templates\registration\password_change_done.html:4
+#: .\templates\registration\password_reset_confirm.html:20
+#: .\templates\registration\password_reset_form.html:5
+#: .\templates\registration\password_reset_form.html:10
+#: .\templates\registration\password_reset_form.html:15
+#, fuzzy
+#| msgid "Lost password?"
+msgid "Reset password"
+msgstr "Забыли пароль?"
+
+#: .\templates\registration\password_change_done.html:6
+#, fuzzy
+#| msgid "Password reset completed"
+msgid "Password changed"
+msgstr "Сброс пароля завершен"
+
+#: .\templates\registration\password_change_form.html:4
+#: .\templates\registration\password_change_form.html:9
+#: .\templates\registration\password_change_form.html:14
+#, fuzzy
+#| msgid "New password:"
+msgid "Change password"
+msgstr "Новый пароль"
+
+#: .\templates\registration\password_reset_complete.html:5
+msgid "Password reset completed"
+msgstr "Сброс пароля завершен"
+
+#: .\templates\registration\password_reset_complete.html:7
+#, fuzzy
+#| msgid "The password has been changed!"
+msgid "Password has been changed!"
+msgstr "Пароль изменен!"
+
+#: .\templates\registration\password_reset_complete.html:8
+#, fuzzy
+#| msgid "log in again?"
+msgid "Log in again?"
+msgstr "Войти снова?"
+
+#: .\templates\registration\password_reset_confirm.html:5
+#: .\templates\registration\password_reset_confirm.html:15
+#, fuzzy
+#| msgid "Password reset completed"
+msgid "Password reset confirmation"
+msgstr "Сброс пароля завершен"
+
+#: .\templates\registration\password_reset_confirm.html:26
+msgid "Please enter (and confirm) your new password."
+msgstr "Пожалуйста, введите (и подтвердите) ваш новый пароль."
+
+#: .\templates\registration\password_reset_confirm.html:32
+msgid "New password:"
+msgstr "Новый пароль"
+
+#: .\templates\registration\password_reset_confirm.html:37
+msgid "Confirm password:"
+msgstr "Подтвердите пароль:"
+
+#: .\templates\registration\password_reset_confirm.html:48
+#, fuzzy
+#| msgid "Password reset completed"
+msgid "Password reset failed"
+msgstr "Сброс пароля завершен"
+
+#: .\templates\registration\password_reset_confirm.html:49
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr "Запросите новый сброс пароля."
+
+#: .\templates\registration\password_reset_done.html:5
+#, fuzzy
+#| msgid "Password reset completed"
+msgid "Password reset"
+msgstr "Сброс пароля завершен"
+
+#: .\templates\registration\password_reset_done.html:7
+msgid "Check your email"
+msgstr "Проверьте свою электронную посту"
+
+#: .\templates\registration\password_reset_email.html:2
+#, fuzzy
+#| msgid "Someone asked for password reset for email"
+msgid "Asked password reset email"
+msgstr "Кто-то попросил сбросить пароль для электронной почты"
+
+#: .\templates\registration\password_reset_email.html:2
+msgid "Follow the link below:"
+msgstr "Перейдите по ссылке ниже"
+
+#: .\templates\registration\register.html:11
+msgid "Please, sign up using the following form:"
+msgstr "Пожалуйста, зарегистрируйтесь, используя следующую форму:"
+
+#: .\templates\registration\register.html:15
+msgid "Create my account"
+msgstr "Создать мою учетную запись"
+
+#: .\templates\registration\register_done.html:5
+#: .\templates\registration\register_done.html:10
+msgid "Welcome"
+msgstr "Добро пожаловать"
+
+#: .\templates\registration\register_done.html:11
+msgid "Your account has been successfully created."
+msgstr "Ваша учетная запись была успешно создана."
+
+#: .\templates\registration\register_done.html:11
+#, fuzzy
+#| msgid "Login"
+msgid "Log in"
+msgstr "Вход"
+
+#~ msgid "Click here to login again."
+#~ msgstr "Нажмите здесь, чтобы войти снова."
+
+#, fuzzy
+#~| msgid "Your username and password didn"
+#~ msgid "Your username and password didn't match"
+#~ msgstr ""
+#~ "Ваше имя пользователя и пароль не совпадают. Пожалуйста, попробуйте еще "
+#~ "раз"
+
+#~ msgid ""
+#~ "We've emailed you instructions for setting your password. If they haven't "
+#~ "arrived in a few minutes, check your spam folder."
+#~ msgstr ""
+#~ "Мы отправили вам по электронной почте инструкции по установке пароля. "
+#~ "Если они этого не сделали прибыл через несколько минут, проверьте папку "
+#~ "со спамом."
+
+#~ msgid "Reset password by email"
+#~ msgstr "Reset password by email"
+
+#~ msgid "Language"
+#~ msgstr "Язык"
+
+#~ msgid "Welcome to our page"
+#~ msgstr "Добро пожаловать"

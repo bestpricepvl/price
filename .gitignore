@@ -1,0 +1,6 @@
+__pychache__/
+*.pyc
+backup/
+documents/
+parallel/
+Prices.MSSQL/
